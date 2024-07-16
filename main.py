@@ -14,7 +14,6 @@ import platform
 
 
 def show_alert(content):
-    app = QApplication(sys.argv)
     alert = QMessageBox()
     alert.setWindowTitle("Error")
     alert.setText(str(content))

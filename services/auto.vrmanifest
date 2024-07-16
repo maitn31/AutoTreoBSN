@@ -1,0 +1,21 @@
+{
+	"source": "steam",
+	"applications": [
+		{
+			"app_key": "steam.app.739630",
+			"launch_type": "url",
+			"strings": {
+				"en_us": {
+					"name": "Phasmophobia"
+				}
+
+			}
+,
+			"image_path": "https://steamcdn-a.akamaihd.net/steam/apps/739630/header.jpg",
+			"last_played_time": "1677990792",
+			"url": "steam://launch/739630/VR"
+		}
+
+	]
+
+}
