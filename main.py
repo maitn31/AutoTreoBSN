@@ -53,6 +53,7 @@ class Window(QMainWindow):
         directory_path = os.path.join(appdata_path, 'AutoCry', 'AutoTreoBSN')
         id_path = os.path.join(directory_path, 'id_list.txt')
         password_path = os.path.join(directory_path, "password.txt")
+        config_path = os.path.join(directory_path, "config.txt")
         if not os.path.exists(directory_path):
             os.makedirs(directory_path)
         if not os.path.exists(id_path):
@@ -60,6 +61,9 @@ class Window(QMainWindow):
                 file.write("")  # Create an empty file
         if not os.path.exists(password_path):
             with open(password_path, 'w') as file:
+                file.write("")  # Create an empty file
+        if not os.path.exists(config_path):
+            with open(config_path, 'w') as file:
                 file.write("")  # Create an empty file
         config_path = os.path.join(directory_path, "config.txt")
         with open(config_path, 'r') as config_read:
